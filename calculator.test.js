@@ -1,6 +1,6 @@
 // calculator.test.js
 
-const { add, subtract, multiply, divide } = require('./calculator');
+const { add, subtract, multiply, divide, modulus } = require('./calculator');
 
 test('adds two numbers correctly', () => {
     expect(add(5, 3)).toBe(8);
@@ -20,4 +20,7 @@ test('divides two numbers correctly', () => {
 
 test('throws error when dividing by zero', () => {
     expect(() => divide(10, 0)).toThrow("Cannot divide by zero");
+});
+test('modulus of two numbers', () => {
+  expect(modulus(10, 3)).toBe(1);
 });

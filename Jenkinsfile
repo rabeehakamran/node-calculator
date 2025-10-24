@@ -8,11 +8,11 @@ pipeline {
     parameters {
         string(name: 'BRANCH_NAME', defaultValue: 'main')
         string(name: 'BUILD_ENV', defaultValue: 'dev')
-        string(name: 'STUDENT_NAME', defaultValue: 'Rabeeha Kamran') // provide your name here
+        string(name: 'STUDENT_NAME', defaultValue: 'Rabeeha Kamran')
     }
 
     environment {
-        APP_VERSION = "1.0.0"
+        APP_VERSION = "1.1.0"
     }
 
     stages {

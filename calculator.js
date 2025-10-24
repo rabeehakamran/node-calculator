@@ -18,6 +18,8 @@ function divide(a, b) {
     }
     return a / b;
 }
-
+function modulus(a, b) {
+  return a % b;
+}
 // Export the functions so Jest can import and test them
-module.exports = { add, subtract, multiply, divide };
+module.exports = { add, subtract, multiply, divide, modulus};
